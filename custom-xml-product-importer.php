@@ -128,12 +128,27 @@ function cip_render_admin_page() {
 
       // === PREVIEW XML ===
       if (isset($_POST['cip_preview_xml'])) {
-          $xml_path = isset($_POST['cip_xml_path']) ? sanitize_text_field($_POST['cip_xml_path']) : '';
-          if (empty($xml_path)) {
-              $xml_path = plugin_dir_path(__FILE__) . 'produklist.xml';
-          }
-          cip_preview_xml($xml_path);
-      }
+        $xml_path = '';
+
+        // Jika user upload file baru
+        if (!empty($_FILES['cip_xml_file']['name'])) {
+            $uploaded = cip_handle_file_upload($_FILES['cip_xml_file']);
+            if ($uploaded['success']) {
+                $xml_path = $uploaded['file'];
+            } else {
+                echo '<div class="notice notice-error"><p>' . esc_html($uploaded['error']) . '</p></div>';
+                return;
+            }
+        } else {
+            // Jika user masukkan path manual
+            $xml_path = isset($_POST['cip_xml_path']) ? sanitize_text_field($_POST['cip_xml_path']) : '';
+            if (empty($xml_path)) {
+                $xml_path = plugin_dir_path(__FILE__) . 'produklist.xml';
+            }
+        }
+
+        cip_preview_xml($xml_path);
+    }
       ?>
   </div>
   <?php
@@ -171,10 +186,9 @@ function cip_process_import($xml_path, $template_slug) {
         return ['success' => false, 'message' => 'Template post (slug: ' . $template_slug . ') tidak ditemukan.'];
     }
 
-    $elementor_json = get_post_meta($template->ID, '_elementor_data', true);
-    if (empty($elementor_json)) {
-        $elementor_json = get_post_meta($template->ID, '_elementor_sync_data', true);
-    }
+    $elementor_json = get_post_meta($template->ID, '_elementor_data', true)
+        ?: get_post_meta($template->ID, '_elementor_sync_data', true);
+
     if (empty($elementor_json)) {
         return ['success' => false, 'message' => 'Template tidak berisi _elementor_data atau _elementor_sync_data.'];
     }
@@ -187,9 +201,8 @@ function cip_process_import($xml_path, $template_slug) {
     libxml_use_internal_errors(true);
     $xml = simplexml_load_file($xml_path);
     if ($xml === false) {
-        $errors = libxml_get_errors();
         $msg = "XML parse error: ";
-        foreach ($errors as $e) $msg .= trim($e->message) . "; ";
+        foreach (libxml_get_errors() as $e) $msg .= trim($e->message) . "; ";
         return ['success' => false, 'message' => $msg];
     }
 
@@ -207,107 +220,7 @@ function cip_process_import($xml_path, $template_slug) {
             continue;
         }
 
-        $category_str = (string)$produk->kategori;
-        $categories = array_filter(array_map('trim', preg_split('/[,|]+/', $category_str)));
-        $featured_image_url = trim((string)$produk->featured_image);
-
-        // Ambil data tab awal
-        $new_elementor = json_decode(json_encode($elementor_data), true);
-        $tab_widget = &$new_elementor[0]['elements'][0];
-        $tab_containers = &$tab_widget['elements'];
-        $tabs_settings  = &$tab_widget['settings']['tabs'];
-
-        // Backup base tab terakhir sebagai template cloning
-        $base_tab = end($tab_containers);
-        $base_tab_setting = end($tabs_settings);
-
-        // Reset tab agar bersih
-        $tab_containers = [];
-        $tabs_settings = [];
-
-        $tipe_index = 0;
-        foreach ($produk->tipe_list->tipe as $tipe) {
-            // Clone base tab dengan ID unik
-            $tab_copy = json_decode(json_encode($base_tab), true);
-            $tab_copy['id'] = wp_generate_uuid4();
-
-            // Clone setting tab
-            $tab_setting = json_decode(json_encode($base_tab_setting), true);
-            $nama_tipe = (string)$tipe->nama;
-            $tab_setting['tab_title'] = $nama_tipe;
-
-            $gambar = (string)$tipe->gambar;
-            $judul_pairs = [];
-
-            if (isset($tipe->judul)) {
-                foreach ($tipe->judul->children() as $k => $v) {
-                    $judul_pairs[strtolower($k)] = (string)$v;
-                }
-            }
-
-            // Update gambar di sisi kiri
-            foreach ($tab_copy['elements'] as &$inner_container) {
-                foreach ($inner_container['elements'] as &$widget) {
-                    if ($widget['widgetType'] === 'image' && !empty($gambar)) {
-                        $widget['settings']['image']['url'] = $gambar;
-                    }
-                }
-            }
-
-            // Tambahkan judulN + teksN secara dinamis ke container kanan
-            foreach ($tab_copy['elements'] as &$inner_container) {
-                // cari container heading
-                $has_heading = false;
-                foreach ($inner_container['elements'] as $w) {
-                    if ($w['widgetType'] === 'heading') {
-                        $has_heading = true;
-                        break;
-                    }
-                }
-                if (!$has_heading) continue;
-
-                // Hapus isi lama
-                $inner_container['elements'] = [];
-
-                $i = 1;
-                while (isset($judul_pairs['judul' . $i]) || isset($judul_pairs['teks' . $i])) {
-                    $judul = $judul_pairs['judul' . $i] ?? '';
-                    $teks  = $judul_pairs['teks' . $i] ?? '';
-
-                    // Heading
-                    $inner_container['elements'][] = [
-                        'id' => wp_generate_uuid4(),
-                        'elType' => 'widget',
-                        'widgetType' => 'heading',
-                        'settings' => [
-                            'title' => $judul,
-                            'header_size' => 'h3'
-                        ],
-                        'elements' => []
-                    ];
-
-                    // Text editor
-                    $inner_container['elements'][] = [
-                        'id' => wp_generate_uuid4(),
-                        'elType' => 'widget',
-                        'widgetType' => 'text-editor',
-                        'settings' => [
-                            'editor' => '<p>' . esc_html($teks) . '</p>'
-                        ],
-                        'elements' => []
-                    ];
-
-                    $i++;
-                }
-            }
-
-            // Tambahkan ke array utama
-            $tab_containers[] = $tab_copy;
-            $tabs_settings[] = $tab_setting;
-            $tipe_index++;
-        }
-
-        // Buat post baru
+        // Buat post dulu
         $post_id = wp_insert_post([
             'post_title'    => $title,
             'post_status'   => 'publish',
@@ -321,7 +234,98 @@ function cip_process_import($xml_path, $template_slug) {
             continue;
         }
 
-        // Tambahkan semua meta elementor penting
+        $featured_image_url = trim((string)convert_gdrive_link($produk->featured_image));
+
+        // Clone template Elementor
+        $new_elementor = json_decode(json_encode($elementor_data), true);
+        $tab_widget = &$new_elementor[0]['elements'][0];
+        $tab_containers = &$tab_widget['elements'];
+        $tabs_settings  = &$tab_widget['settings']['tabs'];
+
+        $base_tab = end($tab_containers);
+        $base_tab_setting = end($tabs_settings);
+
+        // Bersihkan tab lama
+        $tab_containers = [];
+        $tabs_settings = [];
+
+        foreach ($produk->tipe_list->tipe as $tipe) {
+            $tab_copy = json_decode(json_encode($base_tab), true);
+            $tab_copy['id'] = wp_generate_uuid4();
+
+            $tab_setting = json_decode(json_encode($base_tab_setting), true);
+            $nama_tipe = (string)$tipe->nama;
+            $tab_setting['tab_title'] = $nama_tipe;
+
+            $gambar = (string)convert_gdrive_link($tipe->gambar);
+            $judul_pairs = [];
+
+            if (isset($tipe->judul)) {
+                foreach ($tipe->judul->children() as $k => $v) {
+                    $judul_pairs[strtolower($k)] = (string)$v;
+                }
+            }
+
+            // Update gambar
+            foreach ($tab_copy['elements'] as &$inner_container) {
+                foreach ($inner_container['elements'] as &$widget) {
+                    if ($widget['widgetType'] === 'image' && !empty($gambar)) {
+                        $attach_id = cip_sideload_image_get_id($gambar, $post_id);
+                        if ($attach_id && !is_wp_error($attach_id)) {
+                            $widget['settings']['image']['url'] = wp_get_attachment_url($attach_id);
+                            $widget['settings']['image']['id']  = $attach_id;
+                        } else {
+                            $widget['settings']['image']['url'] = $gambar;
+                        }
+                    }
+                }
+                unset($widget);
+            }
+            unset($inner_container);
+
+            // Update teks judul
+            foreach ($tab_copy['elements'] as &$inner_container) {
+                $has_heading = false;
+                foreach ($inner_container['elements'] as $w) {
+                    if ($w['widgetType'] === 'heading') {
+                        $has_heading = true;
+                        break;
+                    }
+                }
+                if (!$has_heading) continue;
+
+                $inner_container['elements'] = [];
+
+                $i = 1;
+                while (isset($judul_pairs['judul' . $i]) || isset($judul_pairs['teks' . $i])) {
+                    $judul = $judul_pairs['judul' . $i] ?? '';
+                    $teks  = $judul_pairs['teks' . $i] ?? '';
+
+                    $inner_container['elements'][] = [
+                        'id' => wp_generate_uuid4(),
+                        'elType' => 'widget',
+                        'widgetType' => 'heading',
+                        'settings' => ['title' => $judul, 'header_size' => 'h3'],
+                        'elements' => []
+                    ];
+                    $inner_container['elements'][] = [
+                        'id' => wp_generate_uuid4(),
+                        'elType' => 'widget',
+                        'widgetType' => 'text-editor',
+                        'settings' => ['editor' => '<div style="white-space: pre-line;">' . nl2br(esc_html(trim($teks))) . '</div>'],
+                        'elements' => []
+                    ];
+
+                    $i++;
+                }
+            }
+            unset($inner_container);
+
+            $tab_containers[] = $tab_copy;
+            $tabs_settings[] = $tab_setting;
+        }
+
+        // Simpan elementor data
         update_post_meta($post_id, '_elementor_data', wp_slash(json_encode($new_elementor)));
         update_post_meta($post_id, '_elementor_edit_mode', 'builder');
         update_post_meta($post_id, '_elementor_template_type', 'wp-post');
@@ -331,17 +335,18 @@ function cip_process_import($xml_path, $template_slug) {
         // Gambar unggulan
         if (!empty($featured_image_url)) {
             $attach_id = cip_sideload_image_get_id($featured_image_url, $post_id);
-            if ($attach_id) set_post_thumbnail($post_id, $attach_id);
+            if ($attach_id && !is_wp_error($attach_id)) {
+                set_post_thumbnail($post_id, $attach_id);
+            }
         }
 
         // Kategori
+        $category_str = (string)$produk->kategori;
+        $categories = array_filter(array_map('trim', preg_split('/[,|]+/', $category_str)));
         if (!empty($categories)) {
             $term_ids = [];
             foreach ($categories as $cat) {
-                $term = term_exists($cat, 'category');
-                if (!$term || is_wp_error($term)) {
-                    $term = wp_insert_term($cat, 'category');
-                }
+                $term = term_exists($cat, 'category') ?: wp_insert_term($cat, 'category');
                 if (!is_wp_error($term)) {
                     $term_id = is_array($term) ? $term['term_id'] : $term;
                     $term_ids[] = (int)$term_id;
@@ -364,100 +369,133 @@ function cip_sideload_image_get_id($file, $post_id = 0) {
     require_once(ABSPATH . 'wp-admin/includes/file.php');
     require_once(ABSPATH . 'wp-admin/includes/image.php');
 
-    // Use media_sideload_image to import
-    $tmp = media_sideload_image($file, $post_id, null, 'id');
+    $file = convert_gdrive_link($file);
 
-    if (is_wp_error($tmp)) {
-        // fallback: try download to temp and use wp_upload_bits + wp_insert_attachment
-        $tmpfile = download_url($file);
-        if (is_wp_error($tmpfile)) return false;
-        $file_array = [];
-        $file_array['name'] = basename($file);
-        $file_array['tmp_name'] = $tmpfile;
-        $id = media_handle_sideload($file_array, $post_id);
-        if (is_wp_error($id)) {
-            @unlink($tmpfile);
-            return false;
-        }
-        return $id;
+    // Coba unduh manual (karena Google Drive tidak direct serve image)
+    $tmpfile = download_url($file);
+    if (is_wp_error($tmpfile)) {
+        // Fallback: ambil pakai file_get_contents
+        $contents = @file_get_contents($file);
+        if (!$contents) return false;
+        $tmpfile = wp_tempnam(basename($file));
+        file_put_contents($tmpfile, $contents);
     }
 
-    // if media_sideload_image returned id (WP 5.5+), return it
-    if (is_numeric($tmp) || (is_string($tmp) && ctype_digit($tmp))) {
-        return (int) $tmp;
+    $file_array = [
+        'name' => basename(parse_url($file, PHP_URL_PATH)),
+        'tmp_name' => $tmpfile,
+    ];
+
+    $id = media_handle_sideload($file_array, $post_id);
+    if (is_wp_error($id)) {
+        @unlink($tmpfile);
+        return false;
     }
 
-    // else try to find attachment by URL
-    $att_id = attachment_url_to_postid($file);
-    if ($att_id) return $att_id;
-
-    return false;
+    return $id;
 }
 
 function cip_preview_xml($xml_path) {
-  echo '<h2>Preview Isi XML</h2>';
+    echo '<h2>Preview Isi XML</h2>';
 
-  if (!file_exists($xml_path)) {
-      echo '<div class="notice notice-error"><p>File XML tidak ditemukan di path: ' . esc_html($xml_path) . '</p></div>';
-      return;
-  }
+    if (!file_exists($xml_path)) {
+        echo '<div class="notice notice-error"><p>File XML tidak ditemukan di path: ' . esc_html($xml_path) . '</p></div>';
+        return;
+    }
 
-  libxml_use_internal_errors(true);
-  $xml = simplexml_load_file($xml_path);
-  if ($xml === false) {
-      echo '<div class="notice notice-error"><p>Gagal parsing XML:</p><ul>';
-      foreach (libxml_get_errors() as $e) {
-          echo '<li>' . esc_html($e->message) . '</li>';
-      }
-      echo '</ul></div>';
-      return;
-  }
+    libxml_use_internal_errors(true);
+    $xml = simplexml_load_file($xml_path);
+    if ($xml === false) {
+        echo '<div class="notice notice-error"><p>Gagal parsing XML:</p><ul>';
+        foreach (libxml_get_errors() as $e) {
+            echo '<li>' . esc_html($e->message) . '</li>';
+        }
+        echo '</ul></div>';
+        return;
+    }
 
-  if (empty($xml->produk)) {
-      echo '<div class="notice notice-warning"><p>Tidak ditemukan elemen <code>&lt;produk&gt;</code> di dalam file XML ini.</p></div>';
-      echo '<pre>' . esc_html(substr(file_get_contents($xml_path), 0, 500)) . '</pre>';
-      return;
-  }
+    if (empty($xml->produk)) {
+        echo '<div class="notice notice-warning"><p>Tidak ditemukan elemen <code>&lt;produk&gt;</code> di dalam file XML ini.</p></div>';
+        echo '<pre>' . esc_html(substr(file_get_contents($xml_path), 0, 500)) . '</pre>';
+        return;
+    }
 
-  echo '<table class="widefat striped" style="margin-top:20px;">';
-  echo '<thead><tr><th>#</th><th>Nama Produk</th><th>Kategori</th><th>Featured Image</th><th>Tipe &amp; Judul/Teks</th></tr></thead><tbody>';
+    echo '<table class="widefat striped" style="margin-top:20px;">';
+    echo '<thead><tr><th>#</th><th>Nama Produk</th><th>Kategori</th><th>Featured Image</th><th>Tipe &amp; Judul/Teks</th></tr></thead><tbody>';
 
-  $i = 1;
-  $produk_nodes = $xml->xpath('//produk');
-  if (!$produk_nodes) {
-      return ['success' => false, 'message' => 'Tidak ditemukan elemen <produk> di XML.'];
-  }
+    $i = 1;
+    $produk_nodes = $xml->xpath('//produk');
+    if (!$produk_nodes) {
+        echo '<tr><td colspan="5">Tidak ditemukan elemen <produk>.</td></tr>';
+        echo '</tbody></table>';
+        return;
+    }
 
-  foreach ($produk_nodes as $produk) {
-      $nama = (string)$produk->nama;
-      $kategori = (string)$produk->kategori;
-      $img = (string)$produk->featured_image;
+    foreach ($produk_nodes as $produk) {
+        $nama = (string)$produk->nama;
+        $kategori = (string)$produk->kategori;
+        $img_raw = (string)$produk->featured_image;
+        $img = convert_gdrive_link($img_raw);
 
-      echo '<tr>';
-      echo '<td>' . $i++ . '</td>';
-      echo '<td><strong>' . esc_html($nama) . '</strong></td>';
-      echo '<td>' . esc_html($kategori) . '</td>';
-      echo '<td>';
-      if (!empty($img)) {
-          echo '<img src="' . esc_url($img) . '" alt="" style="width:80px;height:auto;">';
-      } else {
-          echo '-';
-      }
-      echo '</td>';
+        echo '<tr>';
+        echo '<td>' . $i++ . '</td>';
+        echo '<td><strong>' . esc_html($nama) . '</strong></td>';
+        echo '<td>' . esc_html($kategori) . '</td>';
 
-      echo '<td><ul style="margin:0;padding-left:1em;">';
-      foreach ($produk->tipe_list->tipe as $tipe) {
-          $tipe_nama = (string)$tipe->nama;
-          echo '<li><strong>' . esc_html($tipe_nama) . '</strong><ul>';
-          foreach ($tipe->judul->children() as $key => $val) {
-              echo '<li>' . esc_html($key) . ': ' . esc_html((string)$val) . '</li>';
-          }
-          echo '</ul></li>';
-      }
-      echo '</ul></td>';
+        // === Featured Image Preview + Link ===
+        echo '<td>';
+        if (!empty($img)) {
+            echo '<a href="' . esc_url($img_raw) . '" target="_blank">';
+            echo '<img src="' . esc_url($img) . '" alt="" style="width:80px;height:auto;display:block;margin-bottom:5px;">';
+            echo 'Lihat Gambar';
+            echo '</a>';
+        } else {
+            echo '-';
+        }
+        echo '</td>';
 
-      echo '</tr>';
-  }
+        // === List tipe ===
+        echo '<td><ul style="margin:0;padding-left:1em;">';
+        foreach ($produk->tipe_list->tipe as $tipe) {
+            $tipe_nama = (string)$tipe->nama;
+            $tipe_img_raw = (string)$tipe->gambar;
+            $tipe_img = convert_gdrive_link($tipe_img_raw);
 
-  echo '</tbody></table>';
+            echo '<li style="margin-bottom:0.5em;">';
+            echo '<strong>' . esc_html($tipe_nama) . '</strong>';
+
+            // tampilkan gambar tipe jika ada
+            if (!empty($tipe_img)) {
+                echo '<br><a href="' . esc_url($tipe_img_raw) . '" target="_blank">';
+                echo '<img src="' . esc_url($tipe_img) . '" alt="" style="width:70px;height:auto;margin-top:4px;">';
+                echo '</a>';
+            }
+
+            // tampilkan judul dan teks
+            echo '<ul style="margin-top:4px;">';
+            if (isset($tipe->judul)) {
+                foreach ($tipe->judul->children() as $key => $val) {
+                    echo '<li>' . esc_html($key) . ': ' . esc_html((string)$val) . '</li>';
+                }
+            } else {
+                echo '<li><em>Tidak ada konten judul/teks</em></li>';
+            }
+            echo '</ul>';
+            echo '</li>';
+        }
+        echo '</ul></td>';
+
+        echo '</tr>';
+    }
+
+    echo '</tbody></table>';
+}
+
+function convert_gdrive_link($url) {
+    if (strpos($url, 'drive.google.com') !== false) {
+        if (preg_match('/\/d\/([a-zA-Z0-9_-]+)/', $url, $match)) {
+            return 'https://drive.google.com/uc?export=download&id=' . $match[1];
+        }
+    }
+    return $url;
 }
