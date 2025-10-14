@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+
+  <produk>
+    <nama>Flow Meter Vortex 8800</nama>
+    <kategori>Rosemount, Flow Measurement</kategori>
+    <featured_image>https://domain.com/img/8800.jpg</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>8800D</nama>
+        <gambar>https://domain.com/img/8800D.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Flow meter dengan akurasi tinggi untuk cairan dan gas.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Ukuran pipa 1–12 inci, tekanan maksimal 100 bar.</teks2>
+          <judul3>Aplikasi</judul3>
+          <teks3>Industri minyak dan gas, air, dan kimia.</teks3>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>Temperature Transmitter 644</nama>
+    <kategori>Rosemount, Temperature Measurement</kategori>
+    <featured_image>https://domain.com/img/644.jpg</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>644A</nama>
+        <gambar>https://domain.com/img/644A.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Transmitter suhu dengan presisi tinggi.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Input RTD dan thermocouple, range -200 hingga 850°C.</teks2>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>644H</nama>
+        <gambar>https://domain.com/img/644H.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Versi head-mount dengan housing aluminium.</teks1>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>644R</nama>
+        <gambar>https://domain.com/img/644R.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Versi remote-mount dengan komunikasi HART.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Kompatibel dengan FOUNDATION Fieldbus.</teks2>
+          <judul3>Sertifikasi</judul3>
+          <teks3>ATEX, IECEx, CSA.</teks3>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>644D</nama>
+        <gambar>https://domain.com/img/644D.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Model digital dengan kompensasi suhu otomatis.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Resolusi 16-bit, akurasi ±0.05% span.</teks2>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>Level Transmitter 5300</nama>
+    <kategori>Rosemount, Level Measurement</kategori>
+    <featured_image>https://domain.com/img/5300.jpg</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>5301</nama>
+        <gambar>https://domain.com/img/5301.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Radar guided wave transmitter untuk cairan.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Frekuensi 6 GHz, jarak hingga 35 meter.</teks2>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>5302</nama>
+        <gambar>https://domain.com/img/5302.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Model untuk solid dan granular material.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Toleransi suhu hingga 400°C.</teks2>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>5303</nama>
+        <gambar>https://domain.com/img/5303.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Dilengkapi advanced echo tracking algorithm.</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Output 4-20 mA, HART, Modbus.</teks2>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+</produklist>

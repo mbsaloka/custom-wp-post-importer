@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Transmitter 2088</nama>
+    <kategori>Rosemount</kategori>
+    <featured_image>https://domain.com/img/2088.jpg</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>2088A</nama>
+        <gambar>https://domain.com/img/2088A.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Sensor tekanan presisi tinggi</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Rentang 0–100 bar</teks2>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>2088B</nama>
+        <gambar>https://domain.com/img/2088B.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Versi kompak</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Rentang 0–10 bar</teks2>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>Pressure Transmitter 3051</nama>
+    <kategori>Rosemount</kategori>
+    <featured_image>https://domain.com/img/3051.jpg</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>3051T</nama>
+        <gambar>https://domain.com/img/3051T.jpg</gambar>
+        <judul>
+          <judul1>Deskripsi</judul1>
+          <teks1>Transmitter tekanan industri berat</teks1>
+          <judul2>Spesifikasi</judul2>
+          <teks2>Rentang 0–400 bar</teks2>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>
