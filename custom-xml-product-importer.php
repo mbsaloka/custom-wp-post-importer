@@ -175,20 +175,23 @@ function cip_handle_file_upload($file) {
     return ['success' => true, 'file' => $target];
 }
 
-// Core import processor
+// Core import processor (dengan debug log)
 function cip_process_import($xml_path, $template_slug) {
+    $debug_log = []; // === DEBUG VARIABLE ===
+
     if (!file_exists($xml_path)) {
         return ['success' => false, 'message' => 'File XML tidak ditemukan di path: ' . $xml_path];
     }
+    $debug_log[] = "XML ditemukan di: $xml_path";
 
     $template = get_page_by_path($template_slug, OBJECT, 'post');
     if (!$template) {
         return ['success' => false, 'message' => 'Template post (slug: ' . $template_slug . ') tidak ditemukan.'];
     }
+    $debug_log[] = "Template ditemukan (ID: {$template->ID})";
 
     $elementor_json = get_post_meta($template->ID, '_elementor_data', true)
         ?: get_post_meta($template->ID, '_elementor_sync_data', true);
-
     if (empty($elementor_json)) {
         return ['success' => false, 'message' => 'Template tidak berisi _elementor_data atau _elementor_sync_data.'];
     }
@@ -213,14 +216,17 @@ function cip_process_import($xml_path, $template_slug) {
         $title = trim((string)$produk->nama);
         if (empty($title)) continue;
 
+        $debug_log[] = "=== Mulai import produk: $title ===";
+
         // Cegah duplikat
         $existing = get_page_by_title($title, OBJECT, 'post');
         if ($existing && get_post_status($existing->ID) !== 'trash') {
             $duplicate_count++;
+            $debug_log[] = "Produk \"$title\" dilewati (duplikat)";
             continue;
         }
 
-        // Buat post dulu
+        // Buat post baru
         $post_id = wp_insert_post([
             'post_title'    => $title,
             'post_status'   => 'publish',
@@ -230,13 +236,27 @@ function cip_process_import($xml_path, $template_slug) {
         ]);
 
         if (is_wp_error($post_id)) {
-            error_log('Gagal membuat post: ' . $title);
+            $debug_log[] = "Gagal membuat post: {$title} -> " . $post_id->get_error_message();
             continue;
         }
 
-        $featured_image_url = trim((string)convert_gdrive_link($produk->featured_image));
+        $debug_log[] = "Post berhasil dibuat (ID: $post_id)";
 
-        // Clone template Elementor
+        // === Featured image ===
+        $featured_image_url = trim((string)convert_gdrive_link($produk->featured_image));
+        if ($featured_image_url) {
+            $debug_log[] = "Featured image URL: $featured_image_url";
+            $attach_id = cip_sideload_image_get_id($featured_image_url, $post_id, $debug_log);
+            if ($attach_id) {
+                set_post_thumbnail($post_id, $attach_id);
+                update_post_meta($post_id, '_hide_featured_image', '1');
+                $debug_log[] = "Featured image diset dengan attachment ID: $attach_id";
+            } else {
+                $debug_log[] = "Gagal sideload featured image dari: $featured_image_url";
+            }
+        }
+
+        // === Clone Elementor ===
         $new_elementor = json_decode(json_encode($elementor_data), true);
         $tab_widget = &$new_elementor[0]['elements'][0];
         $tab_containers = &$tab_widget['elements'];
@@ -245,24 +265,28 @@ function cip_process_import($xml_path, $template_slug) {
         $base_tab = end($tab_containers);
         $base_tab_setting = end($tabs_settings);
 
-        // Bersihkan tab lama
         $tab_containers = [];
         $tabs_settings = [];
 
         foreach ($produk->tipe_list->tipe as $tipe) {
+            $nama_tipe = (string)$tipe->nama;
+            $debug_log[] = "- Membuat tab tipe: $nama_tipe";
+
             $tab_copy = json_decode(json_encode($base_tab), true);
             $tab_copy['id'] = wp_generate_uuid4();
 
             $tab_setting = json_decode(json_encode($base_tab_setting), true);
-            $nama_tipe = (string)$tipe->nama;
             $tab_setting['tab_title'] = $nama_tipe;
 
-            $gambar = (string)convert_gdrive_link($tipe->gambar);
-            $judul_pairs = [];
+            $gambar = trim((string)convert_gdrive_link($tipe->gambar));
+            if ($gambar) {
+                $debug_log[] = "-- Gambar tab URL: $gambar";
+            }
 
+            $judul_pairs = [];
             if (isset($tipe->judul)) {
                 foreach ($tipe->judul->children() as $k => $v) {
-                    $judul_pairs[strtolower($k)] = (string)$v;
+                    $judul_pairs[strtolower($k)] = trim((string)$v);
                 }
             }
 
@@ -270,20 +294,21 @@ function cip_process_import($xml_path, $template_slug) {
             foreach ($tab_copy['elements'] as &$inner_container) {
                 foreach ($inner_container['elements'] as &$widget) {
                     if ($widget['widgetType'] === 'image' && !empty($gambar)) {
-                        $attach_id = cip_sideload_image_get_id($gambar, $post_id);
-                        if ($attach_id && !is_wp_error($attach_id)) {
-                            $widget['settings']['image']['url'] = wp_get_attachment_url($attach_id);
+                        $attach_id = cip_sideload_image_get_id($gambar, $post_id, $debug_log);
+                        if ($attach_id) {
+                            $url = wp_get_attachment_url($attach_id);
+                            $widget['settings']['image']['url'] = $url;
                             $widget['settings']['image']['id']  = $attach_id;
+                            $debug_log[] = "--- Gambar Elementor diupdate ke: $url";
                         } else {
                             $widget['settings']['image']['url'] = $gambar;
+                            $debug_log[] = "--- Gagal sideload gambar, pakai URL mentah.";
                         }
                     }
                 }
-                unset($widget);
             }
-            unset($inner_container);
 
-            // Update teks judul
+            // Update teks heading/text
             foreach ($tab_copy['elements'] as &$inner_container) {
                 $has_heading = false;
                 foreach ($inner_container['elements'] as $w) {
@@ -295,7 +320,6 @@ function cip_process_import($xml_path, $template_slug) {
                 if (!$has_heading) continue;
 
                 $inner_container['elements'] = [];
-
                 $i = 1;
                 while (isset($judul_pairs['judul' . $i]) || isset($judul_pairs['teks' . $i])) {
                     $judul = $judul_pairs['judul' . $i] ?? '';
@@ -315,30 +339,19 @@ function cip_process_import($xml_path, $template_slug) {
                         'settings' => ['editor' => '<div style="white-space: pre-line;">' . nl2br(esc_html(trim($teks))) . '</div>'],
                         'elements' => []
                     ];
-
                     $i++;
                 }
             }
-            unset($inner_container);
 
             $tab_containers[] = $tab_copy;
             $tabs_settings[] = $tab_setting;
         }
 
-        // Simpan elementor data
         update_post_meta($post_id, '_elementor_data', wp_slash(json_encode($new_elementor)));
         update_post_meta($post_id, '_elementor_edit_mode', 'builder');
         update_post_meta($post_id, '_elementor_template_type', 'wp-post');
         update_post_meta($post_id, '_elementor_version', ELEMENTOR_VERSION);
         update_post_meta($post_id, '_elementor_page_settings', []);
-
-        // Gambar unggulan
-        if (!empty($featured_image_url)) {
-            $attach_id = cip_sideload_image_get_id($featured_image_url, $post_id);
-            if ($attach_id && !is_wp_error($attach_id)) {
-                set_post_thumbnail($post_id, $attach_id);
-            }
-        }
 
         // Kategori
         $category_str = (string)$produk->kategori;
@@ -358,27 +371,37 @@ function cip_process_import($xml_path, $template_slug) {
         }
 
         $count++;
+        $debug_log[] = "Post selesai diproses: $title (ID $post_id)";
     }
 
-    return ['success' => true, 'message' => "Selesai import: $count produk. Duplikat di-skip: $duplicate_count."];
+    $log_output = implode("\n", $debug_log);
+    return [
+        'success' => true,
+        'message' => "Selesai import: $count produk. Duplikat: $duplicate_count.\n\n=== DEBUG LOG ===\n" . $log_output
+    ];
 }
 
-// helper: sideload image and return attachment ID (robust)
-function cip_sideload_image_get_id($file, $post_id = 0) {
+
+// helper: sideload image with debug
+function cip_sideload_image_get_id($file, $post_id = 0, &$debug_log = []) {
     require_once(ABSPATH . 'wp-admin/includes/media.php');
     require_once(ABSPATH . 'wp-admin/includes/file.php');
     require_once(ABSPATH . 'wp-admin/includes/image.php');
 
     $file = convert_gdrive_link($file);
+    $debug_log[] = "Memulai sideload: $file";
 
-    // Coba unduh manual (karena Google Drive tidak direct serve image)
     $tmpfile = download_url($file);
     if (is_wp_error($tmpfile)) {
-        // Fallback: ambil pakai file_get_contents
+        $debug_log[] = "download_url gagal: " . $tmpfile->get_error_message();
         $contents = @file_get_contents($file);
-        if (!$contents) return false;
+        if (!$contents) {
+            $debug_log[] = "file_get_contents juga gagal.";
+            return false;
+        }
         $tmpfile = wp_tempnam(basename($file));
         file_put_contents($tmpfile, $contents);
+        $debug_log[] = "file_get_contents berhasil fallback.";
     }
 
     $file_array = [
@@ -388,10 +411,12 @@ function cip_sideload_image_get_id($file, $post_id = 0) {
 
     $id = media_handle_sideload($file_array, $post_id);
     if (is_wp_error($id)) {
+        $debug_log[] = "media_handle_sideload gagal: " . $id->get_error_message();
         @unlink($tmpfile);
         return false;
     }
 
+    $debug_log[] = "Berhasil sideload -> attachment ID: $id";
     return $id;
 }
 
@@ -492,10 +517,14 @@ function cip_preview_xml($xml_path) {
 }
 
 function convert_gdrive_link($url) {
-    if (strpos($url, 'drive.google.com') !== false) {
-        if (preg_match('/\/d\/([a-zA-Z0-9_-]+)/', $url, $match)) {
-            return 'https://drive.google.com/uc?export=download&id=' . $match[1];
-        }
-    }
-    return $url;
+    // Tidak ada konversi apapun, biarkan URL langsung digunakan (GitHub raw, Imgur, dsb)
+    return trim($url);
 }
+
+// === Sembunyikan featured image di single post jika meta _hide_featured_image aktif ===
+add_filter('post_thumbnail_html', function($html, $post_id, $post_thumbnail_id, $size, $attr) {
+    if (is_single($post_id) && get_post_meta($post_id, '_hide_featured_image', true) === '1') {
+        return ''; // jangan tampilkan featured image di single view
+    }
+    return $html;
+}, 10, 5);
