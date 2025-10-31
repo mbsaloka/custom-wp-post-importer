@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>DVR A</nama>
+    <kategori>Products, Chint Power Quality</kategori>
+    <featured_image>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/RM%20Series%20Modular%20Online%20UPS.png?raw=true</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>DVR A</nama>
+        <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/RM%20Series%20Modular%20Online%20UPS.png?raw=true</gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            GB/T 12325-2008 "Power Quality Supply Voltage Deviation" stipulates that for three-phase power supply below 20kV, the voltage deviation limit cannot exceed ± 7% of the nominal voltage; for 220V single-phase power supply, the voltage deviation limit cannot exceed +7% and 10% of nominal voltage.
+            As defined in GB/T30137-2013 "Power Quality Voltage Dips and Short interruptions", voltage sags refer to the temporary reduction of the effective value of the power frequency voltage at a certain point in the power system to 10% to 90% of the rated Votlage (that is, the amplitude is 0.1pu~0.9pu), and return to normal after 10ms~1min; short-term interuption refers to phenomenon that one or more phase voltages drop below 0.1pu instantaneously, and return to normal after a duration of 10ms-1min.
+            HPD2000DVR-A is composed of inverter, rectifier, isolation transformer, bypass circuit and so on. The energy of the compensation part is obtained from the grid side through power electronic technology. When the main grid has a sudden voltage sag, a voltage swell, or a short-term interruption, the output voltage can be corrected and the load equipment can be protected.</teks1>
+          <judul2>Technical Parameters</judul2>
+          <list2>
+            Rated Voltage : 400V
+            Frequency : 50Hz/60Hz
+            Rated Power : 500kVA, 630kVA, 800kVA, 1000kVA
+            Machine Response Time : &lt;2ms
+            Voltage Unbalance : &lt;3%
+            Frequency Error : &lt;±0.2Hz
+            Total Harmonics of Output Voltage : &lt;2.5%
+            Loss : &lt;2%
+            Error : &lt;1%
+            Voltage Loss : &lt;2%
+            Operating Temperature : 0~50°C
+            Temperature Derating : When it exceeds 50°C, derate by 2% for every 1°C increase, up to 50°C
+            Working Altitude : &lt;1000m (without derating)
+            Altitude Derating : When the altitude exceeds 1000m, derate 1% for every 100m increase in altitude, up to 2000m
+          </list2>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>

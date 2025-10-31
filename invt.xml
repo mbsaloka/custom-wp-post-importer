@@ -13,18 +13,18 @@
           <teks1>
             The RM series modular UPS provides the most compact footprint of less than 2m2 with maximum capacity of 900kVA.With best reliability and high performance, it has been leading the domestic market for years. RM series is considered to be the best power protection solution for large data centers, as well as for sensitive electronics.</teks1>
           <judul2>Features</judul2>
-          <teks2>
-            • Independent LCD for Each Power Module
-            • Friendly Interface
-            • Isolated Air Flow
-            • Unique Design for High Reliability
-            • High Density ,Modular, Scalable
-            • Comprehensive Monitoring Management
-            • Critical Waveform Recording
-            • Smart Sleep
-            • Self-aging
-            • Programmable Dry Contacts
-          </teks2>
+          <list2>
+            Independent LCD for Each Power Module
+            Friendly Interface
+            Isolated Air Flow
+            Unique Design for High Reliability
+            High Density ,Modular, Scalable
+            Comprehensive Monitoring Management
+            Critical Waveform Recording
+            Smart Sleep
+            Self-aging
+            Programmable Dry Contacts
+          </list2>
         </judul>
       </tipe>
       <tipe>
@@ -35,12 +35,12 @@
           <teks1>
             The RM Series Rack Mounted Modular UPS is scalable, hot-swappable, online double conversion. The capacity is from 25 to 200kVA/kW, it's the ideal choice for modern data center. With the latest IGBT three-level and full DSP control technology, the new RM series delivers the best combination of reliability and flexibility.</teks1>
           <judul2>Features</judul2>
-          <teks2>
-            • High Power Density
-            • Rack Modular Design
-            • Battery Cold Start
-            • Friendly Interface
-          </teks2>
+          <list2>
+            High Power Density
+            Rack Modular Design
+            Battery Cold Start
+            Friendly Interface
+          </list2>
           <judul3>Application</judul3>
           <teks3>
             IDC(Internet Data Center), network servers and workstation, control system, communication system, office, PC etc.

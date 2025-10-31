@@ -321,24 +321,62 @@ function cip_process_import($xml_path, $template_slug) {
 
                 $inner_container['elements'] = [];
                 $i = 1;
-                while (isset($judul_pairs['judul' . $i]) || isset($judul_pairs['teks' . $i])) {
+                while (
+                    isset($judul_pairs['judul' . $i]) ||
+                    isset($judul_pairs['teks' . $i]) ||
+                    isset($judul_pairs['list' . $i])
+                ) {
                     $judul = $judul_pairs['judul' . $i] ?? '';
                     $teks  = $judul_pairs['teks' . $i] ?? '';
+                    $list  = $judul_pairs['list' . $i] ?? '';
 
-                    $inner_container['elements'][] = [
-                        'id' => wp_generate_uuid4(),
-                        'elType' => 'widget',
-                        'widgetType' => 'heading',
-                        'settings' => ['title' => $judul, 'header_size' => 'h3'],
-                        'elements' => []
-                    ];
-                    $inner_container['elements'][] = [
-                        'id' => wp_generate_uuid4(),
-                        'elType' => 'widget',
-                        'widgetType' => 'text-editor',
-                        'settings' => ['editor' => '<div style="white-space: pre-line;">' . nl2br(esc_html(trim($teks))) . '</div>'],
-                        'elements' => []
-                    ];
+                    if (!empty($judul)) {
+                        $inner_container['elements'][] = [
+                            'id' => wp_generate_uuid4(),
+                            'elType' => 'widget',
+                            'widgetType' => 'heading',
+                            'settings' => [
+                                'title' => $judul,
+                                'header_size' => 'h3'
+                            ],
+                            'elements' => []
+                        ];
+                    }
+
+                    // Jika ada <teksX>, tampilkan sebagai paragraf biasa
+                    if (!empty($teks)) {
+                        $inner_container['elements'][] = [
+                            'id' => wp_generate_uuid4(),
+                            'elType' => 'widget',
+                            'widgetType' => 'text-editor',
+                            'settings' => [
+                                'editor' => '<div style="white-space: pre-line;">' . nl2br(esc_html(trim($teks))) . '</div>'
+                            ],
+                            'elements' => []
+                        ];
+                    }
+
+                    // Jika ada <listX>, ubah ke bullet list (<ul>)
+                    if (!empty($list)) {
+                        // Pisahkan setiap baris jadi item list
+                        $items = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $list)));
+                        $html_list = '<ul>';
+                        foreach ($items as $item) {
+                            $html_list .= '<li>' . esc_html($item) . '</li>';
+                        }
+                        $html_list .= '</ul>';
+
+                        $inner_container['elements'][] = [
+                            'id' => wp_generate_uuid4(),
+                            'elType' => 'widget',
+                            'widgetType' => 'text-editor',
+                            'settings' => [
+                                'editor' => $html_list
+                            ],
+                            'elements' => []
+                        ];
+                    }
+
                     $i++;
                 }
             }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>VLT® Micro Drive FC-51</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Honeywell%20HPM%20Series.png?raw=true</featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Micro Drive FC-51</nama>
+        <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Honeywell%20HPM%20Series.png?raw=true</gambar>
+        <judul>
+          <judul1>✅ Power Range</judul1>
+          <list1>
+            1-phase 200–240 V: 0.18–2.2 kW
+            3-phase 200–240 V: 0.25–3.7 kW
+            3-phase 380–480 V: 0.37–22 kW
+          </list1>
+          <judul2>🌍 Key Features</judul2>
+          <list2>
+            Built-in RFI filter and brake chopper (≥ 1.5 kW)
+            Automatic Motor Tuning for optimal performance
+            98% efficiency and energy-saving mode (AEO)
+            Flying start and Smart Logic Controller for flexibility
+            Coated PCB for protection in harsh environments
+            RoHS compliant, environmentally friendly design
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            🛠️ Industrial machines
+            💨 Fans &amp; pumps
+            ❄️ HVAC systems
+            🧩 OEM integration
+          </list3>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>
