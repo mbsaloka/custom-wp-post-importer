@@ -222,8 +222,11 @@ function cip_process_import($xml_path, $template_slug) {
         $existing = get_page_by_title($title, OBJECT, 'post');
         if ($existing && get_post_status($existing->ID) !== 'trash') {
             $duplicate_count++;
-            $debug_log[] = "Produk \"$title\" dilewati (duplikat)";
-            continue;
+            // $debug_log[] = "Produk \"$title\" dilewati (duplikat)";
+            // continue;
+            $debug_log[] = "Produk \"$title\" sudah ada (ID: {$existing->ID}), menghapus post lama...";
+            wp_delete_post($existing->ID, true); // true = hapus permanen
+            $debug_log[] = "Post lama dihapus. Membuat ulang...";
         }
 
         // Buat post baru

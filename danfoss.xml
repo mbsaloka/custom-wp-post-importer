@@ -3,34 +3,665 @@
   <produk>
     <nama>VLT® Micro Drive FC-51</nama>
     <kategori>Products, Danfoss Drive</kategori>
-    <featured_image>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Honeywell%20HPM%20Series.png?raw=true</featured_image>
+    <featured_image>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/VLT%C2%AE%20Micro%20Drive%20FC-51.jpg?raw=true</featured_image>
     <tipe_list>
       <tipe>
         <nama>VLT® Micro Drive FC-51</nama>
-        <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Honeywell%20HPM%20Series.png?raw=true</gambar>
+        <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/VLT%C2%AE%20Micro%20Drive%20FC-51.jpg?raw=true</gambar>
         <judul>
-          <judul1>✅ Power Range</judul1>
-          <list1>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Micro Drive FC-51 is a general-purpose frequency converter that can control AC motors up to 22.0 kW.
+            It is a compact and reliable drive designed for industrial, HVAC, and OEM applications — delivering high performance, easy setup, and strong environmental compliance.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
             1-phase 200–240 V: 0.18–2.2 kW
             3-phase 200–240 V: 0.25–3.7 kW
             3-phase 380–480 V: 0.37–22 kW
-          </list1>
-          <judul2>🌍 Key Features</judul2>
-          <list2>
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
             Built-in RFI filter and brake chopper (≥ 1.5 kW)
             Automatic Motor Tuning for optimal performance
             98% efficiency and energy-saving mode (AEO)
             Flying start and Smart Logic Controller for flexibility
             Coated PCB for protection in harsh environments
             RoHS compliant, environmentally friendly design
-          </list2>
-          <judul3>🌍 Key Features</judul3>
-          <list3>
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
             🛠️ Industrial machines
             💨 Fans &amp; pumps
             ❄️ HVAC systems
             🧩 OEM integration
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Midi Drive FC-280</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Midi Drive FC-280</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Midi Drive FC-280 delivers efficient and flexible motor control for pumps, fans, conveyors, and mixers.
+            Built to simplify installation and operation, it ensures energy efficiency, safety, and easy integration.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            1-phase 200–240 V: 0.37–2.2 kW
+            3-phase 200–240 V: 0.37–3.7 kW
+            3-phase 380–480 V: 0.37–22 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Integrated DC choke and RFI filter for harmonics reduction
+            Dual-channel Safe Torque Off (STO) for safety
+            Pluggable terminals for quick installation
+            Memory module for easy parameter transfer
+            Built-in brake chopper and USB connectivity
+            PM &amp; induction motor compatible
           </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏭 Conveyors
+            ⚙️ Mixers
+            💧 Pumps
+            📦 Packaging systems
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® HVAC Drive FC-102</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® HVAC Drive FC-102</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® HVAC Drive FC-102 is optimized for building automation and air-handling systems.
+            It ensures energy savings, quiet operation, and advanced motor control for HVAC applications.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            3-phase 200–240 V: 1.1–45 kW
+            3-phase 380–480 V: 1.1–1,000 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Automatic Energy Optimization (AEO)
+            Built-in PID control for flow and pressure regulation
+            BACnet, Modbus, and LonWorks communication
+            Fire mode operation for emergency ventilation
+            Real-time clock &amp; smart scheduling
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏢 HVAC systems
+            🌬️ Air handling units
+            ❄️ Chillers &amp; cooling towers
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® AQUA Drive FC-202</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® AQUA Drive FC-202</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® AQUA Drive FC-202 is specifically designed for water and wastewater systems.
+            It ensures smooth pump control, energy efficiency, and system protection.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            3-phase 200–240 V: 0.25–45 kW
+            3-phase 380–480 V: 0.37–1,000 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Integrated PID control for pressure/flow stability
+            Dry pump detection &amp; automatic cleaning
+            Energy-saving algorithms for variable flow
+            Low harmonic emission with DC choke
+            User-friendly display with setup wizard
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🚰 Water supply
+            🏭 Wastewater plants
+            💧 Irrigation systems
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Automation Drive FC-302</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Automation Drive FC-302</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Automation Drive FC-302 is a high-performance drive for industrial automation and process control.
+            Built for durability, flexibility, and precision in demanding environments.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            200–240 V: 0.25–37 kW
+            380–500 V: 0.37–1,000 kW
+            525–690 V: 11–1,000 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Smart Logic Control and PLC functions
+            Modular design for easy upgrades
+            Category 3 Safety Terminal for machine protection
+            Ambient temperature up to 50°C without derating
+            Compatible with all major fieldbus systems
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏭 Industrial automation
+            ⚙️ Production lines
+            🧰 Robotics
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VACON® 20</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VACON® 20</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VACON® 20 is a compact and cost-efficient AC drive for simple automation tasks.
+            It offers fast installation, flexible programming, and reliable performance.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            0.25–18.5 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Built-in PLC functionality
+            Easy parameter copying via memory stick
+            DIN rail mounting for space-saving setup
+            Multiple I/O and fieldbus options
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            ⚙️ OEM machinery
+            🚧 Conveyors
+            🌀 Small pumps &amp; fans
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VACON® 100 FLOW</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VACON® 100 FLOW</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VACON® 100 FLOW is a dedicated drive for pump and fan control.
+            It provides energy-efficient flow management and advanced process control.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            0.55–630 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Flow calculation and PID control
+            Sleep function for low-load conditions
+            Built-in pump clean and multi-pump control
+            Ethernet, Modbus, Profibus communication
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            💧 Water treatment
+            🌬️ HVAC
+            🏭 Process cooling
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VACON® 100 INDUSTRIAL</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VACON® 100 INDUSTRIAL</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VACON® 100 INDUSTRIAL is a versatile drive for industrial motor control.
+            It combines robust performance with flexible connectivity and safety functions.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            0.55–800 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Integrated PLC and communication options
+            Long lifetime components
+            Advanced diagnostics &amp; condition monitoring
+            Safe Torque Off (STO) function
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏭 Process industries
+            ⚙️ Heavy machinery
+            📦 Manufacturing lines
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>IC2-Micro</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>IC2-Micro</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The IC2-Micro is a simple and compact inverter for basic motor control applications.
+            Delivers stable operation, easy setup, and energy efficiency in small systems.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            0.37–5.5 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Compact size with easy wiring
+            User-friendly keypad
+            Cost-effective solution for standard drives
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🧩 Small conveyors
+            💨 Fans
+            ⚙️ Mixers
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VACON® NXP Air Cooled</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VACON® NXP Air Cooled</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VACON® NXP Air Cooled is a premium performance drive for demanding industrial and marine applications.
+            It provides precise motor control, high reliability, and modular air-cooled design.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            0.55–2,000 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            High dynamic control for all motor types
+            Flexible I/O and communication
+            Modular air cooling for easy maintenance
+            Built for 24/7 continuous operation
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            ⚙️ Metal processing
+            🚢 Marine
+            🏭 Pulp &amp; paper industries
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Gear Motors – VLT® OneGearDrive</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Gear Motors – VLT® OneGearDrive</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® OneGearDrive combines a permanent magnet motor and optimized gearbox for maximum efficiency.
+            Ideal for conveyor and material handling systems.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            3-phase 380–480 V: 0.75–2.2 kW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            IE5 ultra-premium efficiency
+            Hygienic design for food &amp; beverage industry
+            Fewer variants simplify spare parts and service
+            Low noise and maintenance-free
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🍞 Food &amp; beverage
+            🚚 Conveyors
+            🧼 Hygienic environments
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Soft Start Controller MCD 100</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Soft Start Controller MCD 100</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The MCD 100 is an extremely cost-effective and compact soft starter for basic motor start/stop applications.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            3-phase 208-600 V, approx 0.1-11 kW (25 A)
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            DIN-rail mounting
+            Very basic smooth start/stop
+            Universal control voltage (24-480 V AC/DC)
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🧩 Small conveyors
+            💨 Fans
+            ⚙️ Mixers
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Soft Starter MCD 202</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Soft Starter MCD 202</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The MCD 202 series is a compact but powerful soft starter offering motor-protection features and suited for motors up to ~110 kW.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>3-phase 200-575 V for 7.5-110 kW (200 A)</list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            2-wire or 3-wire start/stop control
+            Built-in bypass
+            Compact size
+            Good for higher duty starts
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏭 Pumps
+            🧰 Compressors
+            🚚 Conveyors
+        </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Soft Starter MCD 600</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Soft Starter MCD 600</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The MCD 600 is the advanced soft-starter series from Danfoss, combining smart control, communications and protection—optimized for demanding fixed-speed applications.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            Varies; supports large motors (e.g., 410 A version noted)
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            EtherNet/IP, Modbus, Profibus options
+            Adaptive start/stop profiles
+            Motor thermistor input &amp; logging
+            Remote keypad option
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏭 Heavy duty motors
+            🏗️ Industrial plants
+            ⚙️ Large conveyors
+          </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Sine-Wave Filter MCC 101</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Sine-Wave Filter MCC 101</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Sine-Wave Filter MCC 101 is an output filter installed between the drive and the motor to create a near-sinusoidal phase-to-phase voltage. It helps reduce voltage spikes, bearing currents, and motor noise, ensuring smoother and longer motor operation.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            3 × 200–500 V, 2.5–800 A • 3 × 525–690 V, 4.5–660 A
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Converts drive output into a pure sine-wave
+            Reduces motor insulation stress and bearing currents
+            Allows side-by-side installation with the drive for higher ratings
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            ⚙️ High-voltage motors
+            🔌 Long cable runs
+            🏭 Industrial applications requiring high reliability
+        </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® dU/dt Filter MCC 102</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® dU/dt Filter MCC 102</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® dU/dt Filter MCC 102 is a low-pass filter that reduces the rate of voltage change (dU/dt) at the motor terminals. It is ideal for installations with long motor cables or harsh environments, protecting motors from voltage peaks and insulation wear.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            3 × 200–690 V, up to ~880 A (depending on variant)
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Reduces voltage spikes and motor insulation stress
+            Low reactance, suitable for dynamic applications and vector control
+            Extends motor lifetime and minimizes electrical interference
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🔌 Long cable motor runs
+            ⚙️ Frequent start/stop systems
+            🏗️ Heavy-duty industrial setups
+        </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Brake Resistor MCE 101</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Brake Resistor MCE 101</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Brake Resistor MCE 101 absorbs regenerative energy generated during motor deceleration or braking. It protects electrical components from overheating and ensures safe and stable braking performance.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            Matched to drive size — compatible with all VLT® FC Series drives
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Designed specifically for VLT® FC drives
+            Available in horizontal and vertical mounting options
+            Rugged construction with efficient heat dissipation
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏗️ Elevators
+            🚚 Conveyors
+            ⚙️ Applications with frequent braking
+            🧱 Drive braking systems
+        </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Common Mode Filter MCC 105</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Common Mode Filter MCC 105</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Common Mode Filter MCC 105 uses nanocrystalline magnetic cores to reduce high-frequency common-mode currents. It prevents bearing damage and minimizes electromagnetic interference (EMC) in sensitive systems.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            Compatible with all VLT® drive power ranges — from 0.18 kW up to 1.4 MW
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            High-performance nanocrystalline core material
+            Oval-shaped design fits tight retrofit spaces
+            Reduces EMI and improves overall system reliability
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            ⚙️ EMC-sensitive installations
+            🧰 Motors with bearing current issues
+            🏭 Precision industrial systems
+        </list4>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>VLT® Line Reactor MCC 103</nama>
+    <kategori>Products, Danfoss Drive</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>VLT® Line Reactor MCC 103</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            The VLT® Line Reactor MCC 103 is an input-side reactor used to reduce harmonics and inrush currents in drive systems. It improves power quality and system stability, especially when multiple drives share a DC-link.
+          </teks1>
+          <judul2>✅ Power Range</judul2>
+          <list2>
+            Example unit: 380–500 V, 32 A (various ratings available)
+          </list2>
+          <judul3>🌍 Key Features</judul3>
+          <list3>
+            Reduces harmonic distortion and input current peaks
+            Improves system stability and power balance
+            Supports load sharing between drives
+          </list3>
+          <judul4>Perfect for</judul4>
+          <list4>
+            🏭 Multi-drive systems
+            ⚡ DC-link sharing
+            🔋 Large industrial installations
+        </list4>
         </judul>
       </tipe>
     </tipe_list>
