@@ -4,13 +4,13 @@
     <nama>Dynamic Voltage Regulator (DVR)</nama>
     <kategori>Products, Chint Power Quality</kategori>
     <featured_image>
-      gambar_produk
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/DVR%20O.png?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>DVR O</nama>
         <gambar>
-          gambar_produk
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/DVR%20O.png?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -22,7 +22,7 @@
       <tipe>
         <nama>DVR A</nama>
         <gambar>
-          gambar_produk
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/DVR%20A.png?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -34,7 +34,7 @@
       <tipe>
         <nama>DVR C</nama>
         <gambar>
-          gambar_produk
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/DVR%20C.png?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -50,13 +50,13 @@
     <nama>Active Harmonic Filter (AHF)</nama>
     <kategori>Products, Chint Power Quality</kategori>
     <featured_image>
-      gambar_produk
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Active-Harmonic-Filter.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Active Harmonic Filter (AHF)</nama>
         <gambar>
-          gambar_produk
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Active-Harmonic-Filter.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -72,13 +72,13 @@
     <nama>Static Var Generator (SVG)</nama>
     <kategori>Products, Chint Power Quality</kategori>
     <featured_image>
-      gambar_produk
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Static%20Var%20Generator.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Static Var Generator (SVG)</nama>
         <gambar>
-          gambar_produk
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Static%20Var%20Generator.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>

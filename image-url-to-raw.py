@@ -24,11 +24,11 @@ def convert_github_url(url: str) -> str:
 # ==== Contoh penggunaan dengan list URL ====
 
 urls_awal = [
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Automation%20%26amp%3B%20Control%20Gear.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fuse%20%26%20Circuit%20Breakers.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Industrial%20Part.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Relay.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Switches.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/DVR%20O.png",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/DVR%20A.png",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/DVR%20C.png",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Active-Harmonic-Filter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Static%20Var%20Generator.jpg",
 ]
 
 urls_raw = []

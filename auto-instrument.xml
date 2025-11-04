@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Pressure Transmitter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      url_gambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Pressure Transmitter</nama>
+        <gambar>
+          url_gambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Accurately measures fluid or gas pressure and converts it into an electrical signal for process monitoring and control in industrial applications.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Flow Meter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      url_gambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Flow Meter</nama>
+        <gambar>
+          url_gambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Measures the flow rate of liquids or gases in a pipeline with high precision, ensuring efficient process management and system optimization.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Level Meter &amp; Level Switch</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      url_gambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Level Meter &amp; Level Switch</nama>
+        <gambar>
+          url_gambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Detects and monitors liquid levels in tanks or vessels, providing reliable measurement and automatic control to prevent overflow or dry-run conditions.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>
