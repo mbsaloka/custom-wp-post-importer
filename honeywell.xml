@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <produklist>
   <produk>
-    <nama>HPM Series</nama>
+    <nama>Honeywell HPM Series</nama>
     <kategori>Products, Honeywell LV Motor</kategori>
     <featured_image>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Honeywell%20HPM%20Series.png?raw=true</featured_image>
     <tipe_list>
       <tipe>
-        <nama>RM Series Modular Online UPS</nama>
+        <nama>Honeywell HPM Series – IE5 Ultra Premium Motor</nama>
         <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Honeywell%20HPM%20Series.png?raw=true</gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
-            To meet the growing market demand for high-efficiency industrial products, Honeywell has developed HPM series IE5 ultra-high efficient permanent magnet synchronous motor, which can be widely used in fan, water pump, compressor, rubber, plastic processing, feed grinding, machine tools and other industires. The motor follows International Electrotechnical Commission IE5 high efficiency motor standard, and it meets the requirements of all kinds of mechanical equipment for high energy efficiency as well, so as to effectively reduce energy consumption and carbon emissions. At the same time, we can also provide customized solutions according to your special requirements.</teks1>
+            Low-voltage permanent magnet synchronous motor with ultra-high efficiency (IE5) for industrial applications such as pumps, fans, and compressors. Designed for energy savings, lightweight performance, high reliability, and environmental sustainability, featuring IP55 protection and precise control with vector inverters.
+          </teks1>
           <judul2>Features</judul2>
           <list2>
             Standard voltage and frequency: 380V, the frequency is set according to the design poles

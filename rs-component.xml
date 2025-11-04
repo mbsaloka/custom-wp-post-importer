@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Automation &amp; Control Gear</nama>
+    <kategori>Products, RS Component</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Automation &amp; Control Gear</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Devices used to automate and control industrial processes, such as sensors, controllers, and actuators.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fuse &amp; Circuit Breakers</nama>
+    <kategori>Products, RS Component</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fuse &amp; Circuit Breakers</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Electrical protection components that prevent damage from overcurrent or short circuits.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Switches</nama>
+    <kategori>Products, RS Component</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Switches</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Devices used to connect or disconnect electrical circuits in control systems or machinery.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fuse &amp; Circuit Breakers</nama>
+    <kategori>Products, RS Component</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fuse &amp; Circuit Breakers</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Electrical protection components that prevent damage from overcurrent or short circuits.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Relay &amp; Signal Conditioning</nama>
+    <kategori>Products, RS Component</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Relay &amp; Signal Conditioning</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Equipment that manages, amplifies, or converts electrical signals to ensure accurate system control.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Industrial Part</nama>
+    <kategori>Products, RS Component</kategori>
+    <featured_image></featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Industrial Part</nama>
+        <gambar></gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Components and accessories that support maintenance, assembly, and industrial operations.
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>
