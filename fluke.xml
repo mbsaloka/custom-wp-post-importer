@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Fluke Digital Multimeter</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Digital Multimeter</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            A versatile and highly accurate electrical measurement tool used to test voltage, current, resistance, and frequency. Built for durability and reliability, ideal for electricians and industrial professionals.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fluke Clamp Meter</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Clamp Meter</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Measures electrical current without breaking the circuit. Equipped with a precise clamp sensor, it enables fast, safe, and efficient current testing in the field.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fluke Thermal Imager</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Thermal Imager</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Displays temperature variations through color images to detect overheating, energy loss, or hidden electrical faults. Perfect for equipment inspection and preventive maintenance.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>nama_produk</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>nama_produk</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            High-quality terminal blocks designed for reliable electrical connections in control panels and switchgear. Made from flame-retardant PA66 material with high mechanical strength, the SAKDU Series offers maintenance-free clamping, compact size, and excellent thermal stability up to 120°C — ideal for modern industrial applications.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fluke Insulation Tester</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Insulation Tester</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Measures insulation resistance on cables and electrical devices to ensure safety and prevent failures caused by current leakage.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fluke Power Quality Analyzer</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Power Quality Analyzer</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Analyzes power conditions such as harmonics, voltage instability, and electrical disturbances. Helps maintain system efficiency and reliability in industrial environments.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fluke Calibration Tools</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Calibration Tools</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Provides precise calibration for other measurement instruments, ensuring compliance with international standards. Essential for laboratories and industrial facilities.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Fluke Environmental Testers</nama>
+    <kategori>Products, Fluke</kategori>
+    <featured_image>
+      url_gmambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Fluke Environmental Testers</nama>
+        <gambar>
+          url_gmambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Monitors temperature, humidity, air pressure, and other environmental parameters for HVAC, laboratory, and building maintenance applications.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>

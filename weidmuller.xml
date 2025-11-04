@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Weidmüller Terminal Blocks</nama>
+    <kategori>Products, Weidmuller</kategori>
+    <featured_image>
+      gambar_url
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Weidmüller Terminal Blocks (SAKDU Series)</nama>
+        <gambar>
+          gambar_url
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            High-quality terminal blocks designed for reliable electrical connections in control panels and switchgear. Made from flame-retardant PA66 material with high mechanical strength, the SAKDU Series offers maintenance-free clamping, compact size, and excellent thermal stability up to 120°C — ideal for modern industrial applications.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>
