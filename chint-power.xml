@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Dynamic Voltage Regulator (DVR)</nama>
+    <kategori>Products, Chint Power Quality</kategori>
+    <featured_image>
+      gambar_produk
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>DVR O</nama>
+        <gambar>
+          gambar_produk
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Advanced voltage regulation systems that protect electrical equipment from voltage sags, swells, and short-term outages. Featuring ultra-fast 2ms response, >98% efficiency, and supercapacitor energy storage for stable, maintenance-free power quality.
+          </teks1>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>DVR A</nama>
+        <gambar>
+          gambar_produk
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Advanced voltage regulation systems that protect electrical equipment from voltage sags, swells, and short-term outages. Featuring ultra-fast 2ms response, >98% efficiency, and supercapacitor energy storage for stable, maintenance-free power quality.
+          </teks1>
+        </judul>
+      </tipe>
+      <tipe>
+        <nama>DVR C</nama>
+        <gambar>
+          gambar_produk
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Advanced voltage regulation systems that protect electrical equipment from voltage sags, swells, and short-term outages. Featuring ultra-fast 2ms response, >98% efficiency, and supercapacitor energy storage for stable, maintenance-free power quality.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>Active Harmonic Filter (AHF)</nama>
+    <kategori>Products, Chint Power Quality</kategori>
+    <featured_image>
+      gambar_produk
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Active Harmonic Filter (AHF)</nama>
+        <gambar>
+          gambar_produk
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Eliminates harmonic distortion, improves power factor, and stabilizes voltage in industrial networks, ensuring compliance with international power quality standards.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>Static Var Generator (SVG)</nama>
+    <kategori>Products, Chint Power Quality</kategori>
+    <featured_image>
+      gambar_produk
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Static Var Generator (SVG)</nama>
+        <gambar>
+          gambar_produk
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Provides dynamic reactive power compensation to maintain stable voltage and improve power efficiency, reducing losses and enhancing system reliability.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>

@@ -3,11 +3,15 @@
   <produk>
     <nama>Automation &amp; Control Gear</nama>
     <kategori>Products, RS Component</kategori>
-    <featured_image></featured_image>
+    <featured_image>
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Automation%20%26amp%3B%20Control%20Gear.jpg?raw=true
+    </featured_image>
     <tipe_list>
       <tipe>
         <nama>Automation &amp; Control Gear</nama>
-        <gambar></gambar>
+        <gambar>
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Automation%20%26amp%3B%20Control%20Gear.jpg?raw=true
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
@@ -20,11 +24,15 @@
   <produk>
     <nama>Fuse &amp; Circuit Breakers</nama>
     <kategori>Products, RS Component</kategori>
-    <featured_image></featured_image>
+    <featured_image>
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fuse%20%26%20Circuit%20Breakers.jpg?raw=true
+    </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fuse &amp; Circuit Breakers</nama>
-        <gambar></gambar>
+        <gambar>
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fuse%20%26%20Circuit%20Breakers.jpg?raw=true
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
@@ -37,11 +45,15 @@
   <produk>
     <nama>Switches</nama>
     <kategori>Products, RS Component</kategori>
-    <featured_image></featured_image>
+    <featured_image>
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Switches.jpg?raw=true
+    </featured_image>
     <tipe_list>
       <tipe>
         <nama>Switches</nama>
-        <gambar></gambar>
+        <gambar>
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Switches.jpg?raw=true
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
@@ -52,30 +64,17 @@
     </tipe_list>
   </produk>
   <produk>
-    <nama>Fuse &amp; Circuit Breakers</nama>
-    <kategori>Products, RS Component</kategori>
-    <featured_image></featured_image>
-    <tipe_list>
-      <tipe>
-        <nama>Fuse &amp; Circuit Breakers</nama>
-        <gambar></gambar>
-        <judul>
-          <judul1>Description</judul1>
-          <teks1>
-            Electrical protection components that prevent damage from overcurrent or short circuits.
-          </teks1>
-        </judul>
-      </tipe>
-    </tipe_list>
-  </produk>
-  <produk>
     <nama>Relay &amp; Signal Conditioning</nama>
     <kategori>Products, RS Component</kategori>
-    <featured_image></featured_image>
+    <featured_image>
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Relay.jpg?raw=true
+    </featured_image>
     <tipe_list>
       <tipe>
         <nama>Relay &amp; Signal Conditioning</nama>
-        <gambar></gambar>
+        <gambar>
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Relay.jpg?raw=true
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
@@ -88,15 +87,20 @@
   <produk>
     <nama>Industrial Part</nama>
     <kategori>Products, RS Component</kategori>
-    <featured_image></featured_image>
+    <featured_image>
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Industrial%20Part.jpg?raw=true
+    </featured_image>
     <tipe_list>
       <tipe>
         <nama>Industrial Part</nama>
-        <gambar></gambar>
+        <gambar>
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Industrial%20Part.jpg?raw=true
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
             Components and accessories that support maintenance, assembly, and industrial operations.
+          </teks1>
         </judul>
       </tipe>
     </tipe_list>
