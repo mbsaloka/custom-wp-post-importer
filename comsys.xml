@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>ADF P25 – Compact Active Filter (30 A)
+    </nama>
+    <kategori>Products, COMSYS</kategori>
+    <featured_image>
+      gambarurl
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+ADF P25 – Compact Active Filter (30 A)
+        </nama>
+        <gambar>
+          gambarurl
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+A space-saving and cost-effective active filter designed for smaller installations. Delivers powerful harmonic mitigation and resonance elimination using advanced ADF technology — ideal for offices, commercial buildings, and light industrial loads.</teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>ADF P100 – Wall-Mounted Active Filter (50–150 A)
+    </nama>
+    <kategori>Products, COMSYS</kategori>
+    <featured_image>
+      gambarurl
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+ADF P100 – Wall-Mounted Active Filter (50–150 A)
+        </nama>
+        <gambar>
+          gambarurl
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Compact and efficient wall-mounted unit offering advanced harmonic and reactive power compensation. Perfect for industrial plants, data centers, offshore rigs, and HVAC systems requiring reliable power quality.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>ADF P200 – Advanced Harmonic Filter (120 A)
+    </nama>
+    <kategori>Products, COMSYS</kategori>
+    <featured_image>
+      gambarurl
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+ADF P200 – Advanced Harmonic Filter (120 A)
+        </nama>
+        <gambar>
+          gambarurl
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+A high-speed filter for demanding environments. The ADF P200 quickly detects and eliminates interharmonics and resonances where other filters fail — ideal for sensitive loads such as medical equipment, drives, and UPS systems.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>ADF P300 – Modular Active Filter (90–450 A)
+    </nama>
+    <kategori>Products, COMSYS</kategori>
+    <featured_image>
+      gambarurl
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+ADF P300 – Modular Active Filter (90–450 A)
+        </nama>
+        <gambar>
+          gambarurl
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+A versatile, scalable power quality solution for commercial and industrial sites. Handles harmonics, flicker, and load balancing with flexible modular design and optional parallel connection for higher power needs.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>ADF PPM300 – Inverter Module for System Integration (50–150 A)
+    </nama>
+    <kategori>Products, COMSYS</kategori>
+    <featured_image>
+      gambarurl
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+ADF PPM300 – Inverter Module for System Integration (50–150 A)
+        </nama>
+        <gambar>
+          gambarurl
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+A modular building block designed for OEMs and system integrators. Easily integrated into MCCs or control cabinets to create custom low harmonic or active filtering solutions.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>ADF P700 STATCOM – Medium Voltage Power Quality Solution
+    </nama>
+    <kategori>Products, COMSYS</kategori>
+    <featured_image>
+      gambarurl
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+ADF P700 STATCOM – Medium Voltage Power Quality Solution
+        </nama>
+        <gambar>
+          gambarurl
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Utility-grade STATCOM for dynamic reactive compensation, flicker reduction, and harmonic control in heavy industrial networks such as steel plants, cranes, and wind farms. Ensures grid stability and compliance at voltages up to 36 kV.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>

@@ -1,50 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <produklist>
   <produk>
-    <nama>UPS</nama>
-    <kategori>Products, INVT</kategori>
-    <featured_image>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/RM%20Series%20Modular%20Online%20UPS.png?raw=true</featured_image>
+    <nama>RM Series Modular Online UPS (25–600 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
     <tipe_list>
       <tipe>
-        <nama>RM Series Modular Online UPS</nama>
-        <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/RM%20Series%20Modular%20Online%20UPS.png?raw=true</gambar>
+        <nama>
+RM Series Modular Online UPS (25–600 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
-            The RM series modular UPS provides the most compact footprint of less than 2m2 with maximum capacity of 900kVA.With best reliability and high performance, it has been leading the domestic market for years. RM series is considered to be the best power protection solution for large data centers, as well as for sensitive electronics.</teks1>
-          <judul2>Features</judul2>
-          <list2>
-            Independent LCD for Each Power Module
-            Friendly Interface
-            Isolated Air Flow
-            Unique Design for High Reliability
-            High Density ,Modular, Scalable
-            Comprehensive Monitoring Management
-            Critical Waveform Recording
-            Smart Sleep
-            Self-aging
-            Programmable Dry Contacts
-          </list2>
+High-reliability modular UPS designed for large data centers. Features hot-swappable power modules, N+X redundancy, and high efficiency up to 95%. Compact design saves space and simplifies maintenance.
+          </teks1>
         </judul>
       </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>RM Series Rack-Mounted Modular UPS (10–200 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
       <tipe>
-        <nama>RM Series Rack-Mounted Modular Online UPS</nama>
-        <gambar>https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/RM%20Series%20Rack-Mounted%20Modular%20Online%20UPS.png?raw=true</gambar>
+        <nama>
+RM Series Rack-Mounted Modular UPS (10–200 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
         <judul>
           <judul1>Description</judul1>
           <teks1>
-            The RM Series Rack Mounted Modular UPS is scalable, hot-swappable, online double conversion. The capacity is from 25 to 200kVA/kW, it's the ideal choice for modern data center. With the latest IGBT three-level and full DSP control technology, the new RM series delivers the best combination of reliability and flexibility.</teks1>
-          <judul2>Features</judul2>
-          <list2>
-            High Power Density
-            Rack Modular Design
-            Battery Cold Start
-            Friendly Interface
-          </list2>
-          <judul3>Application</judul3>
-          <teks3>
-            IDC(Internet Data Center), network servers and workstation, control system, communication system, office, PC etc.
-          </teks3>
+Rack-type modular UPS for medium data centers and IT rooms. Offers scalable design, 25 kVA modules, and intelligent charging management for longer battery life.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>RM Series In-Built Battery Modular UPS (20–60 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+RM Series In-Built Battery Modular UPS (20–60 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+All-in-one modular UPS with hot-swappable batteries. Compact and easy to install, providing intelligent battery protection and simplified power expansion.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>HT33 Series Tower Online UPS (10–500 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+HT33 Series Tower Online UPS (10–500 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Three-phase online UPS with DSP digital control for maximum reliability. Delivers 96% efficiency, high input power factor, and low THDi. Ideal for data centers and precision equipment.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>HT33-TX Series Tower Online UPS (10–40 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+HT33-TX Series Tower Online UPS (10–40 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+UPS with in-built isolation transformer for enhanced protection. Provides clean, stable power for critical loads in IT and industrial environments.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>HT31 Series Tower Online UPS (10–40 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+HT31 Series Tower Online UPS (10–40 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Compact online UPS with output PF = 1 and parallel capability up to four units. Suitable for computer rooms, servers, and communication equipment.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>HT11 Series Tower Online UPS (1–20 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+HT11 Series Tower Online UPS (1–20 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Single-phase UPS with high efficiency (up to 95%) and intelligent battery management. Ideal for small offices, networks, and sensitive electronics.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>HR33 Series Rack Online UPS (10–25 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+HR33 Series Rack Online UPS (10–25 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Rack-mount UPS for modern data centers. Offers flexible configuration (3/3 or 3/1), touch LCD display, and advanced battery charging management.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>HR11 Series Rack Online UPS (1–10 kVA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+HR11 Series Rack Online UPS (1–10 kVA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Compact double-conversion UPS with high power density and DSP control. Provides reliable power protection for servers, IT systems, and office equipment.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+
+  <produk>
+    <nama>BU Series Offline UPS (600–3000 VA)
+    </nama>
+    <kategori>Products, UPS INVT</kategori>
+    <featured_image>
+      urlgambar
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>
+BU Series Offline UPS (600–3000 VA)
+        </nama>
+        <gambar>
+          urlgambar
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+Cost-effective UPS with automatic voltage regulation and surge protection. Ideal for home offices, PCs, and small devices.
+          </teks1>
         </judul>
       </tipe>
     </tipe_list>

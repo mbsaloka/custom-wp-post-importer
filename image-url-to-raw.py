@@ -24,13 +24,17 @@ def convert_github_url(url: str) -> str:
 # ==== Contoh penggunaan dengan list URL ====
 
 urls_awal = [
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Calibration%20Tools.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Clamp%20Meter.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Digital%20Multimeter.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Environmental%20Testers.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Insulation%20Tester.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Power%20Quality%20Analyzer.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Thermal%20Imager.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Diaphragm%20Level%20Transmitter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Differential%20Pressure%20Transmitter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Direct%20Mount%20Pressure%20Transmitter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Electromagnetic%20Flow%20Meter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Metal%20Capacitive%20Pressure%20Sensor.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Oval%20Gear%20Flow%20Meter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Radar%20Level%20Meter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Remote%20Diaphragm%20Seal%20Transmitter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/SP%202088%20Pressure%20Transmitter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Ultrasonic%20Flow%20Meter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Vortex%20Flow%20Meter.jpg",
 ]
 
 urls_raw = []
