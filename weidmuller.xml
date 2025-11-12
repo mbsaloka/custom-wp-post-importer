@@ -4,13 +4,13 @@
     <nama>Weidmüller Terminal Blocks</nama>
     <kategori>Products, Weidmuller</kategori>
     <featured_image>
-      gambar_url
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/weidmuller%20terminal%20block.png?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Weidmüller Terminal Blocks (SAKDU Series)</nama>
         <gambar>
-          gambar_url
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/weidmuller%20terminal%20block.png?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>

@@ -4,13 +4,13 @@
     <nama>Fluke Digital Multimeter</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Digital%20Multimeter.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Digital Multimeter</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Digital%20Multimeter.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -25,13 +25,13 @@
     <nama>Fluke Clamp Meter</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Clamp%20Meter.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Clamp Meter</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Clamp%20Meter.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -46,13 +46,13 @@
     <nama>Fluke Thermal Imager</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Thermal%20Imager.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Thermal Imager</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Thermal%20Imager.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -64,37 +64,16 @@
     </tipe_list>
   </produk>
   <produk>
-    <nama>nama_produk</nama>
-    <kategori>Products, Fluke</kategori>
-    <featured_image>
-      url_gmambar
-    </featured_image>
-    <tipe_list>
-      <tipe>
-        <nama>nama_produk</nama>
-        <gambar>
-          url_gmambar
-        </gambar>
-        <judul>
-          <judul1>Description</judul1>
-          <teks1>
-            High-quality terminal blocks designed for reliable electrical connections in control panels and switchgear. Made from flame-retardant PA66 material with high mechanical strength, the SAKDU Series offers maintenance-free clamping, compact size, and excellent thermal stability up to 120°C — ideal for modern industrial applications.
-          </teks1>
-        </judul>
-      </tipe>
-    </tipe_list>
-  </produk>
-  <produk>
     <nama>Fluke Insulation Tester</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Insulation%20Tester.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Insulation Tester</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Insulation%20Tester.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -109,13 +88,13 @@
     <nama>Fluke Power Quality Analyzer</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Power%20Quality%20Analyzer.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Power Quality Analyzer</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Power%20Quality%20Analyzer.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -130,13 +109,13 @@
     <nama>Fluke Calibration Tools</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Calibration%20Tools.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Calibration Tools</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Calibration%20Tools.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>
@@ -151,13 +130,13 @@
     <nama>Fluke Environmental Testers</nama>
     <kategori>Products, Fluke</kategori>
     <featured_image>
-      url_gmambar
+      https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Environmental%20Testers.jpg?raw=true
     </featured_image>
     <tipe_list>
       <tipe>
         <nama>Fluke Environmental Testers</nama>
         <gambar>
-          url_gmambar
+          https://raw.githubusercontent.com/mbsaloka/custom-wp-post-importer/master/image/Fluke%20Environmental%20Testers.jpg?raw=true
         </gambar>
         <judul>
           <judul1>Description</judul1>

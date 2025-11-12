@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produklist>
+  <produk>
+    <nama>Differential Pressure Transmitter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Differential Pressure Transmitter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            A digital pressure transmitter designed for industrial applications to measure liquid, gas, or vapor pressure accurately. Features include high stability, 0.1% accuracy, HART communication, and explosion-proof housing.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Direct Mount Pressure Transmitter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Direct Mount Pressure Transmitter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Compact and reliable transmitter for gauge and absolute pressure measurement. Delivers fast response, ±0.1% accuracy, and supports HART communication for industrial process control.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Diaphragm Level Transmitter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Diaphragm Level Transmitter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Ideal for liquid level and pressure measurement in tanks and vessels. Offers high temperature resistance, explosion-proof design, and multiple diaphragm materials for corrosive environments.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Remote Diaphragm Seal Transmitter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Remote Diaphragm Seal Transmitter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Designed for high-viscosity, high-temperature, or corrosive fluids. Provides stable measurement using capillary or flange connections, suitable for chemical and food industries.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>SP/2088 Pressure Transmitter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>SP/2088 Pressure Transmitter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Economical pressure and level transmitter with high performance and long-term stability. Widely used in food, chemical, petroleum, and power industries.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Metal Capacitive Pressure Sensor</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Metal Capacitive Pressure Sensor</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Highly accurate and stable sensor for harsh industrial conditions. Suitable for measuring differential, gauge, or absolute pressure with strong resistance to corrosion.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Vortex Flow Meter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Vortex Flow Meter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Measures liquid, gas, and steam flow with high accuracy and durability. Equipped with LCD display and multiple output options including 4–20 mA and RS485.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Electromagnetic Flow Meter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Electromagnetic Flow Meter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Ideal for conductive liquids such as water, chemicals, and beverages. Provides precise, maintenance-free flow measurement with a range of communication options (HART, Modbus, RS485).
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Ultrasonic Flow Meter (Wall-Mounted / Handheld / Portable)</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Ultrasonic Flow Meter (Wall-Mounted / Handheld / Portable)</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Non-intrusive flow measurement solution for liquids in closed pipes. Easy to install, accurate, and suitable for water, oil, and chemical applications.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Oval Gear Flow Meter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Oval Gear Flow Meter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Positive displacement flow meter for high-viscosity liquids like oil and fuel. Offers excellent precision, low maintenance, and durable construction for industrial use.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+  <produk>
+    <nama>Radar Level Meter</nama>
+    <kategori>Products, Auto Instrument</kategori>
+    <featured_image>
+      [gambar]
+    </featured_image>
+    <tipe_list>
+      <tipe>
+        <nama>Radar Level Meter</nama>
+        <gambar>
+          [gambar]
+        </gambar>
+        <judul>
+          <judul1>Description</judul1>
+          <teks1>
+            Non-contact radar sensor for accurate level measurement of liquids and solids. Operates under extreme temperature and pressure with IP67 protection and explosion-proof design.
+          </teks1>
+        </judul>
+      </tipe>
+    </tipe_list>
+  </produk>
+</produklist>

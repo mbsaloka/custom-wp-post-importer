@@ -24,9 +24,13 @@ def convert_github_url(url: str) -> str:
 # ==== Contoh penggunaan dengan list URL ====
 
 urls_awal = [
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Flow%20Meter.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Pressure%20Transmitter.jpg",
-    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Level%20Meter%20%26%20Level%20Switch.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Calibration%20Tools.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Clamp%20Meter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Digital%20Multimeter.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Environmental%20Testers.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Insulation%20Tester.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Power%20Quality%20Analyzer.jpg",
+    "https://github.com/mbsaloka/custom-wp-post-importer/blob/master/image/Fluke%20Thermal%20Imager.jpg",
 ]
 
 urls_raw = []
